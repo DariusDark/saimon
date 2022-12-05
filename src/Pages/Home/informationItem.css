@@ -1,0 +1,33 @@
+.main-content__information-item {
+  padding:22px 50px 25px 30px;
+  border-right: 2px solid #000;
+}
+
+.main-content__information-item:first-child {
+  padding-left: 0;
+}
+.main-content__information-item:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.information-item__icon-container {
+  max-height: 38px;
+  margin-bottom: 18px;
+}
+
+.information-item__icon {
+  height: 48px;
+  object-fit: cover;
+}
+
+.information-item__number {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+}
+
+.information-item__text {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
