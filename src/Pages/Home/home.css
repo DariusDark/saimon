@@ -69,7 +69,7 @@
 .wall {
   max-height: 100vh;
   min-height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   flex: 0 1 50%;
   justify-content: flex-end;
   gap: 30px;
@@ -81,44 +81,36 @@
 }
 
 .wall-up {
-  animation: scroll-up 20s linear infinite;
-  -webkit-animation: scroll-up 20s linear infinite;
+  animation: scroll-up 20s -4s linear infinite;
+  -webkit-animation: scroll-up 20s -4s linear infinite;
 }
 .wall-down {
-  animation: scroll-down 20s linear infinite;
-  -webkit-animation: scroll-down 20s linear infinite;
+  animation: scroll-down 20s -19s linear infinite;
+  -webkit-animation: scroll-down 20s -19s linear infinite;
 }
 
 @keyframes scroll-up {
   100% {
-    transform: translateY(calc(-300vh - 17.8vh));
-    -webkit-transform: translateY(calc(-300vh - 17.8vh));
-    -moz-transform: translateY(calc(-300vh - 17.8vh));
-    -ms-transform: translateY(calc(-300vh - 17.8vh));
-    -o-transform: translateY(calc(-300vh - 17.8vh));
+    transform: translateY(-2450px);
+    -webkit-transform: translateY(-2450px);
+    -moz-transform: translateY(-2450px);
+    -ms-transform: translateY(-2450px);
+    -o-transform: translateY(-2450px);
   }
 }
 @keyframes scroll-down {
   0% {
-    transform: translateY(calc(-300vh - 17.4vh));
-    -webkit-transform: translateY(calc(-300vh - 17.4vh));
-    -moz-transform: translateY(calc(-300vh - 17.4vh));
-    -ms-transform: translateY(calc(-300vh - 17.4vh));
-    -o-transform: translateY(calc(-300vh - 17.4vh));
+    transform: translateY(calc(-2450px));
+    -webkit-transform: translateY(calc(-2450px));
+    -moz-transform: translateY(calc(-2450px));
+    -ms-transform: translateY(calc(-2450px));
+    -o-transform: translateY(calc(-2450px));
   }
   100% {
-    transform: translateY(calc(0vh));
-    -webkit-transform: translateY(calc(0vh));
-    -moz-transform: translateY(calc(0vh));
-    -ms-transform: translateY(calc(0vh));
-    -o-transform: translateY(calc(0vh));
+    transform: translateY(calc(0));
+    -webkit-transform: translateY(calc(0));
+    -moz-transform: translateY(calc(0));
+    -ms-transform: translateY(calc(0));
+    -o-transform: translateY(calc(0));
   }
-}
-
-svg {
-  fill: currentColor;
-  height: auto;
-  max-width: 66vmin;
-  transform-origin: center;
-  width: 66%;
 }

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import LOGO from "../../_assets/home-page/LOGO.svg";
 import THREE_CIRCLES from "../../_assets/home-page/three-circles.svg";
-import ARROW from "../../_assets/home-page/arrow.svg";
+import BUTTON from "../../_assets/home-page/button.svg";
 import STAR from "../../_assets/home-page/star.svg";
 import TWO_CIRCLES from "../../_assets/home-page/two-circles.svg";
 import TWO_TRIANGLES from "../../_assets/home-page/two-triangles.svg";
@@ -13,6 +13,7 @@ import InformationItem from "./InformationItem";
 
 import "./home.css";
 import WallItem from "./WallItem";
+import { ArrowButton } from "./ArrowButton";
 
 const Home = () => {
   return (
@@ -64,7 +65,7 @@ const Home = () => {
                 <span className="title-word">Development</span>
                 <span className="title-word">Maintenance</span>
               </h1>
-              <div className="hero-section__description row hero-section__description--gap">
+              <div className="hero-section__description row">
                 <p className="hero-section__description-text">
                   Leverage our 6+ years experience to create solid software for
                   your business
@@ -73,22 +74,7 @@ const Home = () => {
                   to="/about-us"
                   className="hero-section__description-link"
                 >
-                  <svg viewBox="0 0 100 100" width="100" height="100">
-                    <defs>
-                      <path
-                        id="circle"
-                        d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
-                      />
-                    </defs>
-                    <text fontSize="21">
-                      <textPath href="#circle">more about us</textPath>
-                    </text>
-                  </svg>
-                  <img
-                    className="hero-section__description-link-arrow"
-                    src={ARROW}
-                    alt="arrow"
-                  />
+                  <ArrowButton />
                 </NavLink>
               </div>
             </div>
