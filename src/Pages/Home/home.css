@@ -10,6 +10,45 @@
   padding: 30px 0px;
 }
 
+/* Main Content */
+
+.main-content {
+  position: relative;
+}
+
+.main-content:before {
+  content: "";
+  position: absolute;
+  background: #e4753270;
+  width: 263px;
+  aspect-ratio: 1;
+  left: 0px;
+  top: 40%;
+  filter: blur(150px);
+  -webkit-filter: blur(150px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main-content:after {
+  content: "";
+  position: absolute;
+  background: #e4dd3260;
+  width: 263px;
+  aspect-ratio: 1;
+  left: 350px;
+  top: 7%;
+  filter: blur(120px);
+  -webkit-filter: blur(120px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 /* Header */
 
 .header {
@@ -81,8 +120,8 @@
 }
 
 .wall-up {
-  animation: scroll-up 20s -4s linear infinite;
-  -webkit-animation: scroll-up 20s -4s linear infinite;
+  animation: scroll-up 20s -19s linear infinite;
+  -webkit-animation: scroll-up 20s -19s linear infinite;
 }
 .wall-down {
   animation: scroll-down 20s -19s linear infinite;
@@ -91,20 +130,20 @@
 
 @keyframes scroll-up {
   100% {
-    transform: translateY(-2450px);
-    -webkit-transform: translateY(-2450px);
-    -moz-transform: translateY(-2450px);
-    -ms-transform: translateY(-2450px);
-    -o-transform: translateY(-2450px);
+    transform: translateY(-2150px);
+    -webkit-transform: translateY(-2150px);
+    -moz-transform: translateY(-2150px);
+    -ms-transform: translateY(-2150px);
+    -o-transform: translateY(-2150px);
   }
 }
 @keyframes scroll-down {
   0% {
-    transform: translateY(calc(-2450px));
-    -webkit-transform: translateY(calc(-2450px));
-    -moz-transform: translateY(calc(-2450px));
-    -ms-transform: translateY(calc(-2450px));
-    -o-transform: translateY(calc(-2450px));
+    transform: translateY(calc(-2150px));
+    -webkit-transform: translateY(calc(-2150px));
+    -moz-transform: translateY(calc(-2150px));
+    -ms-transform: translateY(calc(-2150px));
+    -o-transform: translateY(calc(-2150px));
   }
   100% {
     transform: translateY(calc(0));
