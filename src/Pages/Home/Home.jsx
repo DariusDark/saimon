@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     const content = document.querySelector(".content");
     const wall = document.querySelector(".wall");
-    wall.style.height = content.clientHeight + 30 + "px";
+    wall.style.height = content.clientHeight + "px";
   }, []);
 
   return (
