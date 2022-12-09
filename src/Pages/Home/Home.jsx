@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../../_components/Layout";
 import { NavLink } from "react-router-dom";
 
 import LOGO from "../../_assets/home-page/LOGO.svg";
 import THREE_CIRCLES from "../../_assets/home-page/three-circles.svg";
-import BUTTON from "../../_assets/home-page/button.svg";
 import STAR from "../../_assets/home-page/star.svg";
 import TWO_CIRCLES from "../../_assets/home-page/two-circles.svg";
 import TWO_TRIANGLES from "../../_assets/home-page/two-triangles.svg";
@@ -16,6 +15,12 @@ import WallItem from "./WallItem";
 import { ArrowButton } from "./ArrowButton";
 
 const Home = () => {
+  useEffect(() => {
+    const content = document.querySelector(".content");
+    const wall = document.querySelector(".wall");
+    wall.style.height = content.clientHeight + 30 + "px";
+  }, []);
+
   return (
     <Layout>
       <div className="row home-page">
@@ -99,10 +104,10 @@ const Home = () => {
         </div>
         <div className="wall row">
           <div className="wall-up column">
-            {new Array(8).fill(<WallItem className="wall__item-left" />)}
+            {new Array(12).fill(<WallItem className="wall__item-left" />)}
           </div>
           <div className="wall-down column">
-            {new Array(8).fill(<WallItem className="wall__item-right" />)}
+            {new Array(12).fill(<WallItem className="wall__item-right" />)}
           </div>
         </div>
       </div>
