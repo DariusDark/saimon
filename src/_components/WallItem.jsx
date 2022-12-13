@@ -2,7 +2,7 @@ import React from "react";
 
 import "./wallItem.css";
 
-import nft from "../../_assets/home-page/nft-tiger.png";
+import nft from "../_assets/home-page/nft-tiger.png";
 
 const WallItem = ({ className = "" }) => {
   return (

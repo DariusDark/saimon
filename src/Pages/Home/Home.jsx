@@ -1,66 +1,28 @@
 import React, { useEffect } from "react";
 import Layout from "../../_components/Layout";
+import { Header } from "../../_components/Header";
+import { Information } from "../../_components/Information";
 import { NavLink } from "react-router-dom";
 
-import LOGO from "../../_assets/home-page/LOGO.svg";
 import THREE_CIRCLES from "../../_assets/home-page/three-circles.svg";
-import STAR from "../../_assets/home-page/star.svg";
-import TWO_CIRCLES from "../../_assets/home-page/two-circles.svg";
-import TWO_TRIANGLES from "../../_assets/home-page/two-triangles.svg";
-
-import InformationItem from "./InformationItem";
 
 import "./home.css";
-import WallItem from "./WallItem";
 import { ArrowButton } from "./ArrowButton";
+import { WallUpAndDown } from "../../_components/WallUpAndDown";
 
 const Home = () => {
   useEffect(() => {
     const content = document.querySelector(".content");
     const wall = document.querySelector(".wall");
-    wall.style.height = content.clientHeight + 30 + "px";
+    wall.style.minHeight = content.clientHeight + "px";
   }, []);
 
   return (
     <Layout>
       <div className="row home-page">
         <div className="content">
-          <header className="header">
-            <div className="header__container row">
-              <div className="logo">
-                <div className="logo__container">
-                  <NavLink to="/home">
-                    <img src={LOGO} alt="Saimon Logo" className="logo__image" />
-                  </NavLink>
-                </div>
-              </div>
-              <nav className="navigation">
-                <ul className="navgation__list row">
-                  <li className="list__item">
-                    <NavLink className="list__item-link" to="/">
-                      home
-                    </NavLink>
-                  </li>
-                  <li className="list__item">
-                    <NavLink className="list__item-link" to="/about-us">
-                      about us
-                    </NavLink>
-                  </li>
-                  <li className="list__item">
-                    <NavLink className="list__item-link" to="/services">
-                      services
-                    </NavLink>
-                  </li>
-                  <li className="list__item">
-                    <NavLink className="list__item-link" to="/contact-us">
-                      contact us
-                    </NavLink>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </header>
-          <main className="main-content">
+          <Header />
+          <main className="content__main">
             <div className="hero-section">
               <h1 className="hero-section__title column hero-section__title--gap">
                 <span className="title-word title-word__icon row">
@@ -83,33 +45,10 @@ const Home = () => {
                 </NavLink>
               </div>
             </div>
-            <div className="main-content__information row main-content__information--gap">
-              <InformationItem
-                number="6+"
-                text="years of experience"
-                image={STAR}
-              />
-              <InformationItem
-                number="12"
-                text="dev categories"
-                image={TWO_CIRCLES}
-              />
-              <InformationItem
-                number="23"
-                text="masters in team"
-                image={TWO_TRIANGLES}
-              />
-            </div>
+            <Information />
           </main>
         </div>
-        <div className="wall row">
-          <div className="wall-up column">
-            {new Array(12).fill(<WallItem className="wall__item-left" />)}
-          </div>
-          <div className="wall-down column">
-            {new Array(12).fill(<WallItem className="wall__item-right" />)}
-          </div>
-        </div>
+        <WallUpAndDown />
       </div>
     </Layout>
   );

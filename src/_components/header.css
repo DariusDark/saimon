@@ -1,0 +1,17 @@
+.header {
+    margin-bottom: 60px;
+  }
+  
+  .header__container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navgation__list {
+    gap: 40px;
+  }
+  
+  .list__item-link {
+    font-size: 1rem;
+    font-weight: 700;
+  }

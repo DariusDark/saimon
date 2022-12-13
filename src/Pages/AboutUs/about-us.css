@@ -1,0 +1,17 @@
+.about-us {
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.about-us__hero-section--align-center {
+    align-items: center;
+    gap: 12px;
+}
+
+.about-us__description-text {
+    max-width: 645px !important;
+}
+
+.about-us__icon {
+    max-height: 180px;
+}

@@ -1,3 +1,7 @@
+#arrow-button {
+  width: 180px;
+  height: 66px;
+}
 #arrow {
   transition: transform ease 0.3s;
   -webkit-transition: transform ease 0.3s;
