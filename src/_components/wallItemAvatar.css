@@ -1,0 +1,70 @@
+.wall__item-avatar {
+  min-height: 400px;
+  max-height: 400px;
+  padding: 30px 20px 30px 20px;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.wall__item-avatar:last-child {
+  margin-bottom: 0;
+}
+
+.wall__item-title-avatar {
+  color: #fff;
+  font-size: 1.313rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.wall__item-description-avatar {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.wall__item-background-avatar {
+  width: 255px;
+  max-width: 255px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: url("../_assets/about-us/guy-1.png") center/100% no-repeat;
+}
+
+.wall__item-avatar-left:nth-child(3n + 2) .wall__item-background-avatar {
+  background: url("../_assets/about-us/guy-2.png") center/100% no-repeat;
+}
+
+.wall__item-avatar-right:nth-child(3n + 2) .wall__item-background-avatar {
+  background: url("../_assets/about-us/guy-3.png") center/100% no-repeat;
+}
+
+.wall__item-avatar-left:nth-child(3n + 1) {
+  background: #B19AE9;
+}
+.wall__item-avatar-left:nth-child(3n + 2) {
+  background: #D24F30;
+}
+.wall__item-avatar-left:nth-child(3n + 3) {
+  background: #9AE9AB;
+}
+
+.wall__item-avatar-right:nth-child(5n + 1) {
+  background: #30b5d2;
+}
+.wall__item-avatar-right:nth-child(5n + 2) {
+  background: #eb9e6e;
+}
+.wall__item-avatar-right:nth-child(5n + 3) {
+  background: #e6909e;
+}
+.wall__item-avatar-right:nth-child(5n + 4) {
+  background: #4498e6;
+}
+.wall__item-avatar-right:nth-child(5n + 5) {
+  background: #d24f30;
+}

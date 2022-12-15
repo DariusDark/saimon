@@ -1,18 +1,24 @@
 import React from "react";
-import WallItem from "./WallItem";
+import WallItemNft from "./WallItemNft";
 
 import "./wall.css";
+import WallItemAvatar from "./WallItemAvatar";
 
-export const WallUpAndDown = () => {
-
+export const WallUpAndDown = ({ type = "nft" }) => {
+  const types = {
+    nft: [
+      new Array(12).fill(<WallItemNft className="wall__item-nft-left" />),
+      new Array(12).fill(<WallItemNft className="wall__item-nft-right" />),
+    ],
+    avatar: [
+      new Array(12).fill(<WallItemAvatar className="wall__item-avatar-left" />),
+      new Array(12).fill(<WallItemAvatar className="wall__item-avatar-right" />),
+    ],
+  };
   return (
     <div className={`wall row`}>
-      <div className="wall-up column">
-        {new Array(12).fill(<WallItem className="wall__item-left" />)}
-      </div>
-      <div className="wall-down column">
-        {new Array(12).fill(<WallItem className="wall__item-right" />)}
-      </div>
+      <div className={`wall-up column ${type}`}>{types[type][0]}</div>
+      <div className={`wall-down column ${type}`}>{types[type][1]}</div>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const AboutUs = () => {
           <Header />
           <main className="about-us__main-content">
             <div className="hero-section">
-              <div className="row hero-section__title about-us__hero-section--align-center">
+              <div className="row hero-section__title about-us__hero-section about-us__hero-section--align-center">
                 <h1 className="column hero-section__title--gap">
                   <span className="title-word">About our</span>
                   <span className="title-word">company</span>
@@ -43,7 +43,7 @@ const AboutUs = () => {
             <Information />
           </main>
         </div>
-        <WallUpAndDown />
+        <WallUpAndDown type="avatar" />
       </div>
     </Layout>
   );

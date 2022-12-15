@@ -1,4 +1,4 @@
-.wall__item {
+.wall__item-nft {
   min-height: 400px;
   max-height: 400px;
   padding: 20px 20px 0px;
@@ -10,50 +10,50 @@
   -o-border-radius: 20px;
 }
 
-.wall__item:last-child {
+.wall__item-nft:last-child {
   margin-bottom: 0;
 }
 
-.wall__item-text {
+.wall__item-text-nft {
   color: #fff;
   font-size: 1.313rem;
   font-weight: 700;
   margin-bottom: auto;
 }
 
-.wall__item-image {
+.wall__item-image-nft {
   max-width: 220px;
   margin: 0 auto;
 }
 
-.wall__item-left:nth-child(5n + 1) {
+.wall__item-nft-left:nth-child(5n + 1) {
   background: #d24f30;
 }
-.wall__item-left:nth-child(5n + 2) {
+.wall__item-nft-left:nth-child(5n + 2) {
   background: #9a90fc;
 }
-.wall__item-left:nth-child(5n + 3) {
+.wall__item-nft-left:nth-child(5n + 3) {
   background: #d2304d;
 }
-.wall__item-left:nth-child(5n + 4) {
+.wall__item-nft-left:nth-child(5n + 4) {
   background: #3084d2;
 }
-.wall__item-left:nth-child(5n + 5) {
+.wall__item-nft-left:nth-child(5n + 5) {
   background: #eb9e6e;
 }
 
-.wall__item-right:nth-child(5n + 1) {
+.wall__item-nft-right:nth-child(5n + 1) {
   background: #30b5d2;
 }
-.wall__item-right:nth-child(5n + 2) {
+.wall__item-nft-right:nth-child(5n + 2) {
   background: #eb9e6e;
 }
-.wall__item-right:nth-child(5n + 3) {
+.wall__item-nft-right:nth-child(5n + 3) {
   background: #e6909e;
 }
-.wall__item-right:nth-child(5n + 4) {
+.wall__item-nft-right:nth-child(5n + 4) {
   background: #4498e6;
 }
-.wall__item-right:nth-child(5n + 5) {
+.wall__item-nft-right:nth-child(5n + 5) {
   background: #d24f30;
 }

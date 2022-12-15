@@ -3,15 +3,27 @@
   gap: 60px;
 }
 
+.about-us__hero-section {
+  position: relative;
+}
+
 .about-us__hero-section--align-center {
-    align-items: center;
-    gap: 12px;
+  align-items: center;
+  gap: 12px;
 }
 
 .about-us__description-text {
-    max-width: 645px !important;
+  max-width: 645px !important;
 }
 
 .about-us__icon {
+  position: absolute;
+  right: 1%;
+}
+
+@media (max-height: 850px) {
+  .about-us__icon {
     max-height: 180px;
+    right: 12%;
+  }
 }

@@ -1,48 +1,81 @@
 .wall {
-    min-height: 100vh;
-    max-height: 100vh;
-    overflow: hidden;
-    flex: 0 1 50%;
-    justify-content: flex-end;
-    gap: 30px;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  flex: 0 1 50%;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.wall-up,
+.wall-down {
+  gap: 30px;
+}
+
+.nft.wall-up {
+  animation: nft-scroll-up 40s -39s linear infinite;
+  -webkit-animation: nft-scroll-up 40s -39s linear infinite;
+}
+.nft.wall-down {
+  animation: scroll-down 40s -39s linear infinite;
+  -webkit-animation: scroll-down 40s -39s linear infinite;
+}
+
+.avatar.wall-up {
+  animation: avatar-scroll-up 40s linear infinite;
+  -webkit-animation: avatar-scroll-up 40s linear infinite;
+}
+.avatar.wall-down {
+}
+
+@keyframes avatar-scroll-up {
+  100% {
+    transform: translateY(-2120px);
+    -webkit-transform: translateY(-2120px);
+    -moz-transform: translateY(-2120px);
+    -ms-transform: translateY(-2120px);
+    -o-transform: translateY(-2120px);
   }
-  
-  .wall-up,
-  .wall-down {
-    gap: 30px;
+}
+@keyframes avatar-scroll-down {
+  0% {
+    transform: translateY(calc(-2120px));
+    -webkit-transform: translateY(calc(-2120px));
+    -moz-transform: translateY(calc(-2120px));
+    -ms-transform: translateY(calc(-2120px));
+    -o-transform: translateY(calc(-2120px));
   }
-  
-  .wall-up {
-    animation: scroll-up 20s -19s linear infinite;
-    -webkit-animation: scroll-up 20s -19s linear infinite;
+  100% {
+    transform: translateY(calc(0));
+    -webkit-transform: translateY(calc(0));
+    -moz-transform: translateY(calc(0));
+    -ms-transform: translateY(calc(0));
+    -o-transform: translateY(calc(0));
   }
-  .wall-down {
-    animation: scroll-down 20s -19s linear infinite;
-    -webkit-animation: scroll-down 20s -19s linear infinite;
+}
+
+@keyframes nft-scroll-up {
+  100% {
+    transform: translateY(-2150px);
+    -webkit-transform: translateY(-2150px);
+    -moz-transform: translateY(-2150px);
+    -ms-transform: translateY(-2150px);
+    -o-transform: translateY(-2150px);
   }
-  
-  @keyframes scroll-up {
-    100% {
-      transform: translateY(-2150px);
-      -webkit-transform: translateY(-2150px);
-      -moz-transform: translateY(-2150px);
-      -ms-transform: translateY(-2150px);
-      -o-transform: translateY(-2150px);
-    }
+}
+@keyframes nft-scroll-down {
+  0% {
+    transform: translateY(calc(-2150px));
+    -webkit-transform: translateY(calc(-2150px));
+    -moz-transform: translateY(calc(-2150px));
+    -ms-transform: translateY(calc(-2150px));
+    -o-transform: translateY(calc(-2150px));
   }
-  @keyframes scroll-down {
-    0% {
-      transform: translateY(calc(-2150px));
-      -webkit-transform: translateY(calc(-2150px));
-      -moz-transform: translateY(calc(-2150px));
-      -ms-transform: translateY(calc(-2150px));
-      -o-transform: translateY(calc(-2150px));
-    }
-    100% {
-      transform: translateY(calc(0));
-      -webkit-transform: translateY(calc(0));
-      -moz-transform: translateY(calc(0));
-      -ms-transform: translateY(calc(0));
-      -o-transform: translateY(calc(0));
-    }
+  100% {
+    transform: translateY(calc(0));
+    -webkit-transform: translateY(calc(0));
+    -moz-transform: translateY(calc(0));
+    -ms-transform: translateY(calc(0));
+    -o-transform: translateY(calc(0));
   }
+}
