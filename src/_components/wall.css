@@ -17,8 +17,8 @@
   -webkit-animation: nft-scroll-up 40s -39s linear infinite;
 }
 .nft.wall-down {
-  animation: scroll-down 40s -39s linear infinite;
-  -webkit-animation: scroll-down 40s -39s linear infinite;
+  animation: nft-scroll-down 40s -25s linear infinite;
+  -webkit-animation: nft-scroll-down 40s -25s linear infinite;
 }
 
 .avatar.wall-up {
@@ -26,6 +26,8 @@
   -webkit-animation: avatar-scroll-up 40s linear infinite;
 }
 .avatar.wall-down {
+  animation: avatar-scroll-down 40s linear infinite;
+  -webkit-animation: avatar-scroll-down 40s linear infinite;
 }
 
 @keyframes avatar-scroll-up {

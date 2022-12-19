@@ -9,8 +9,10 @@ import THREE_CIRCLES from "../../_assets/home-page/three-circles.svg";
 import "./home.css";
 import { ArrowButton } from "./ArrowButton";
 import { WallUpAndDown } from "../../_components/WallUpAndDown";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 
 const Home = () => {
+  useDocumentTitle("Saimon | Web Agency");
   useEffect(() => {
     const content = document.querySelector(".content");
     const wall = document.querySelector(".wall");

@@ -3,12 +3,14 @@ import Layout from "../../_components/Layout";
 import { Header } from "../../_components/Header";
 import { Information } from "../../_components/Information";
 import { WallUpAndDown } from "../../_components/WallUpAndDown";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 
 import MULTIPLE_CIRCLES from "../../_assets/about-us/multiple-circles.svg";
 
 import "./about-us.css";
 
 const AboutUs = () => {
+  useDocumentTitle("Saimon | About Us");
   return (
     <Layout>
       <div className="row about-us">
