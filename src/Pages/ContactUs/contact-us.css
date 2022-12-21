@@ -1,6 +1,7 @@
 .contact-us__container {
   padding: 20px 30px;
   min-height: 100vh;
+  gap: 30px;
 }
 
 .contact-us {
@@ -17,6 +18,7 @@
 
 .contact-us__form-container {
   flex: 1 0 44%;
+  align-self: flex-start;
   position: relative;
 }
 
@@ -115,9 +117,12 @@
 .contact-us__input-label {
   flex: 1 0 45%;
   height: 100%;
+  background-color: #fff;
   padding-left: 15px;
   display: flex;
   align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .contact-us__input {
@@ -132,15 +137,21 @@
 }
 
 .contact-us__textarea-container {
+  border-radius: 10px;
   position: relative;
   margin-bottom: 30px;
+  /* border: 3px solid #000; */
 }
 
 .contact-us__textarea {
+  position: relative;
   resize: vertical;
+  /* text-indent: 115px; */
+  /* border: 0; */
 }
 
 .contact-us__textarea-label {
+  display: none;
   position: absolute;
   left: 20px;
   top: 20px;

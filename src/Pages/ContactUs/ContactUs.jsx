@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../../_components/Layout";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 import { NavLink } from "react-router-dom";
@@ -10,6 +10,19 @@ import "./contact-us.css";
 
 const ContactUs = () => {
   useDocumentTitle("Saimon | Contact Us");
+  const STATIC_TEXT = "your message: ";
+  const [message, setMessage] = useState(STATIC_TEXT);
+
+  const handleChange = (event) => {
+    const { value } = event.target;
+    const dynamicText = value.split(STATIC_TEXT)[1];
+    if (dynamicText) {
+      setMessage(STATIC_TEXT + dynamicText);
+    } else {
+      setMessage(STATIC_TEXT);
+    }
+  };
+
   return (
     <Layout>
       <div className="column contact-us__container">
@@ -132,6 +145,8 @@ const ContactUs = () => {
                 </div>
                 <div className="contact-us__textarea-container">
                   <textarea
+                    onChange={handleChange}
+                    value={message}
                     id="message"
                     className="input contact-us__textarea"
                     rows="4"
@@ -148,7 +163,11 @@ const ContactUs = () => {
                     send &#10230;
                   </button>
                   <div className="row contact-us__check-container">
-                    <input className="contact-us__checkbox" id="checkbox" type="checkbox" />
+                    <input
+                      className="contact-us__checkbox"
+                      id="checkbox"
+                      type="checkbox"
+                    />
                     <label
                       htmlFor="checkbox"
                       className="contact-us__check-label"
