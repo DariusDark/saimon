@@ -13,11 +13,11 @@
 }
 
 .contact-us__content {
-  flex: 1 1 calc(50% -30px);
+  flex: 1 1 calc(48% -30px);
 }
 
 .contact-us__form-container {
-  flex: 1 0 44%;
+  flex: 1 0 47%; 
   align-self: flex-start;
   position: relative;
 }
@@ -146,6 +146,7 @@
 .contact-us__textarea {
   position: relative;
   resize: vertical;
+  overflow-x:  hidden;
   /* text-indent: 115px; */
   /* border: 0; */
 }

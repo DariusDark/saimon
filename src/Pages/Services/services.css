@@ -1,0 +1,41 @@
+.services {
+  padding: 30px 30px 120px 30px;
+}
+.services__illustration {
+  position: relative;
+}
+
+.top-setting {
+  position: absolute;
+  top: 5px;
+  right: 68px;
+  animation: rotation1 6s linear infinite;
+  -webkit-animation: rotation1 6s linear infinite;
+}
+
+.bottom-setting {
+  position: absolute;
+  top: 95px;
+  right: 22px;
+  animation: rotation2 6s linear infinite;
+  -webkit-animation: rotation2 6s linear infinite;
+}
+
+@keyframes rotation1 {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes rotation2 {
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+  }
+}
