@@ -31,9 +31,9 @@ const Services = () => {
               all. It can make a lasting impression, it can make or break your
               sales, it can help you know more
             </p>
-            <div className="services__header-cta">
-              <NavLink className="services__header-link">contatc-us</NavLink>
-            </div>
+            <NavLink className="services__header-cta">
+              <span className="services__header-link-text">contact us</sp>
+            </NavLink>
           </div>
           <div className="services__illustration">
             <img
@@ -46,7 +46,11 @@ const Services = () => {
               src={topSetting}
               alt="illustration"
             />
-            <img src={illustration} alt="illustration" />
+            <img
+              className="services__illustration-image"
+              src={illustration}
+              alt="illustration"
+            />
           </div>
         </div>
       </div>

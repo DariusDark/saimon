@@ -1,8 +1,50 @@
 .services {
   padding: 30px 30px 120px 30px;
 }
+
+.services--gap {
+  gap: 45px;
+}
+
+.services__title {
+  font-size: 5.625rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.services__title--gap {
+  gap: 20px;
+  align-items: center;
+}
+
+.services__content-description {
+  font-size: 1.313rem;
+  line-height: 28px;
+  max-width: 645px;
+  margin-bottom: 40px;
+}
+
+.services__header-cta {
+  padding: 15px 30px;
+  display: inline-block;
+  background: #d24f30;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  color: #fff;
+  box-shadow: 5px 5px 0 0 #000;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
 .services__illustration {
   position: relative;
+  flex: 1 1 auto;
+}
+
+.services__illustration-image {
+  max-width: 100%;
 }
 
 .top-setting {
