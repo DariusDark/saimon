@@ -7,6 +7,16 @@
   gap: 30px;
 }
 
+.wall-column {
+  min-height: unset;
+  max-height: unset;
+}
+
+.wall-column .wall__item-nft {
+  max-width: 315px;
+  min-width: 315px;
+}
+
 .wall-up,
 .wall-down {
   gap: 30px;
@@ -21,6 +31,15 @@
   -webkit-animation: nft-scroll-down 40s -25s linear infinite;
 }
 
+.nft.wall-left {
+  animation: ntf-scroll-left 40s -39s linear infinite;
+  -webkit-animation: ntf-scroll-left 40s -39s linear infinite;
+}
+.nft.wall-right {
+  animation: ntf-scroll-right 40s -37s linear infinite;
+  -webkit-animation: ntf-scroll-right 40s -37s linear infinite;
+}
+
 .avatar.wall-up {
   animation: avatar-scroll-up 40s linear infinite;
   -webkit-animation: avatar-scroll-up 40s linear infinite;
@@ -28,6 +47,37 @@
 .avatar.wall-down {
   animation: avatar-scroll-down 40s linear infinite;
   -webkit-animation: avatar-scroll-down 40s linear infinite;
+}
+
+.wall-left,
+.wall-right {
+  gap: 30px;
+}
+
+@keyframes ntf-scroll-left {
+  100% {
+    transform: translateX(-1725px);
+    -webkit-transform: translateX(-1725px);
+    -moz-transform: translateX(-1725px);
+    -ms-transform: translateX(-1725px);
+    -o-transform: translateX(-1725px);
+  }
+}
+
+@keyframes ntf-scroll-right {
+  0% {
+    transform: translateX(-1725px);
+    -webkit-transform: translateX(-1725px);
+    -moz-transform: translateX(-1725px);
+    -ms-transform: translateX(-1725px);
+    -o-transform: translateX(-1725px);
+  } 100% {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
 }
 
 @keyframes avatar-scroll-up {

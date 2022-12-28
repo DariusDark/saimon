@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../_components/Layout";
 import { Header } from "../../_components/Header";
 import { Information } from "../../_components/Information";
-import { WallUpAndDown } from "../../_components/WallUpAndDown";
+import { Wall } from "../../_components/Wall";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 
 import MULTIPLE_CIRCLES from "../../_assets/about-us/multiple-circles.svg";
@@ -45,7 +45,7 @@ const AboutUs = () => {
             <Information />
           </main>
         </div>
-        <WallUpAndDown type="avatar" />
+        <Wall type="avatar" />
       </div>
     </Layout>
   );

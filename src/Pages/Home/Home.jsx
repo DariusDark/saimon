@@ -8,7 +8,7 @@ import THREE_CIRCLES from "../../_assets/home-page/three-circles.svg";
 
 import "./home.css";
 import { ArrowButton } from "./ArrowButton";
-import { WallUpAndDown } from "../../_components/WallUpAndDown";
+import { Wall } from "../../_components/Wall";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 
 const Home = () => {
@@ -50,7 +50,7 @@ const Home = () => {
             <Information />
           </main>
         </div>
-        <WallUpAndDown />
+        <Wall />
       </div>
     </Layout>
   );

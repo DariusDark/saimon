@@ -160,7 +160,7 @@ const ContactUs = () => {
                 </div>
                 <div className="row contact-us__actions">
                   <button type="submit" className="contact-us__button">
-                    send &#10230;
+                    send
                   </button>
                   <div className="row contact-us__check-container">
                     <input

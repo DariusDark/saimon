@@ -17,7 +17,7 @@
 }
 
 .contact-us__form-container {
-  flex: 1 0 47%; 
+  flex: 1 0 47%;
   align-self: flex-start;
   position: relative;
 }
@@ -140,15 +140,12 @@
   border-radius: 10px;
   position: relative;
   margin-bottom: 30px;
-  /* border: 3px solid #000; */
 }
 
 .contact-us__textarea {
   position: relative;
   resize: vertical;
-  overflow-x:  hidden;
-  /* text-indent: 115px; */
-  /* border: 0; */
+  overflow-x: hidden;
 }
 
 .contact-us__textarea-label {
@@ -163,6 +160,10 @@
 
 .contact-us__button {
   color: #fff;
+  display: inline-flex;
+  gap: 10px;
+  font-weight: 700;
+  align-items: center;
   white-space: nowrap;
   border-radius: 10px;
   padding: 15px 30px;
@@ -170,6 +171,15 @@
   text-transform: lowercase;
   font-size: 1rem;
   box-shadow: 4px 5px 0 0px #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.contact-us__button:after {
+  content: url("../../_assets/Arrow.svg");
+  margin-bottom: -5px;
 }
 
 .contact-us__actions {
