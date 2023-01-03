@@ -39,7 +39,7 @@ const Services = () => {
                 all. It can make a lasting impression, it can make or break your
                 sales, it can help you know more
               </p>
-              <NavLink className="services__header-cta">
+              <NavLink className="animated-button services__header-cta">
                 <span className="services__header-link-text">contact us</span>
               </NavLink>
             </div>
@@ -77,7 +77,9 @@ const Services = () => {
           <Wall wallAlign="horizontal" />
         </div>
         <div className="our-works__link-container">
-          <NavLink className="our-works__link">learn more</NavLink>
+          <NavLink className="animated-button our-works__link">
+            learn more
+          </NavLink>
         </div>
       </section>
     </>

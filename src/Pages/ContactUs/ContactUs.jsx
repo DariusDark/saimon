@@ -159,7 +159,10 @@ const ContactUs = () => {
                   </label>
                 </div>
                 <div className="row contact-us__actions">
-                  <button type="submit" className="contact-us__button">
+                  <button
+                    type="submit"
+                    className="animated-button contact-us__button"
+                  >
                     send
                   </button>
                   <div className="row contact-us__check-container">

@@ -17,8 +17,8 @@ const AboutUs = () => {
         <div className="content">
           <Header />
           <main className="about-us__main-content">
-            <div className="hero-section">
-              <div className="row hero-section__title about-us__hero-section about-us__hero-section--align-center">
+            <div className="about-us__hero-section">
+              <div className="row about-us__hero-section__title about-us__hero-section--align-center">
                 <h1 className="column hero-section__title--gap">
                   <span className="title-word">About our</span>
                   <span className="title-word">company</span>
@@ -29,7 +29,7 @@ const AboutUs = () => {
                   alt="circles icon"
                 />
               </div>
-              <div className="hero-section__description">
+              <div className="about-us-hero-section__description">
                 <p className="hero-section__description-text about-us__description-text">
                   We are a full-service software development company. We solve
                   complex problems for businesses, startups and investors. Based

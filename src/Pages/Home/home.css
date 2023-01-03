@@ -1,6 +1,5 @@
-/* Whole component */
-
 .home-page {
+  overflow: hidden;
   align-items: flex-start;
   gap: 60px;
 }
